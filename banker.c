@@ -55,7 +55,7 @@ int main()
 	int y=0;
 	for(k=0;k<m;k++)
 	{
-		for(j=i;i<m;i++)
+		for(i=0;i<n;i++)
 		{
 			if(f[i]==0)
 			{	
@@ -68,14 +68,7 @@ int main()
 						break;
 					}
 				}
-				if(flag==0)
-				{
-					if(need[i][j]>avail[j])
-					{
-					flag=1;
-					break;
-					}
-				}
+				
 				if(flag==0)
 				{
 					ans[ind++]=i;
